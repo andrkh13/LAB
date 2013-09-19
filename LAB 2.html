@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>LABoppgave Andreas</title>
+ <link type="text/css" rel="stylesheet" href="Style.css"/>
+</head>
+
+<body>
+<!--Her har jeg lagt inn Javascript i HTML fila. Dette følte jeg var enklest og her går det ut på å få en rullegardin + endre tekst ved hjelp av SPan-->
+
+<Script Language=JavaScript>
+
+function printToOutputBox(selectobj){
+var e_proglangs = document.getElementById("proglangs");
+var e_outputbox = document.getElementById("outputbox");
+e_outputbox.innerHTML = "Du har selektert programmeringsspr&aringket " + e_proglangs.options[selectobj.selectedIndex].text;
+}
+
+</Script>
+<center>
+<h1>Programmeringsspråk - hva er det?</h1>
+
+<form>
+<label for="proglangs">Velg:</label>
+<select name="select-pl" id="proglangs" onChange="printToOutputBox(this)">
+<option value="ActionScript">ActionScript</option>
+<option value="AppleScript">AppleScript</option>
+<option value="Asp">Asp</option>
+<option value="BASIC">BASIC</option>
+<option value="C">C</option>
+<option value="C++">C++</option>
+<option value="Clojure">Clojure</option>
+<option value="COBOL">COBOL</option>
+<option value="ColdFusion">ColdFusion</option>
+<option value="Erlang">Erlang</option>
+<option value="Fortran">Fortran</option>
+<option value="Groovy">Groovy</option>
+<option value="Haskell">Haskell</option>
+</select>
+</form>
+<p><br />
+<span id="outputbox">Velkommen til en mystisk verden av programmeringsspråk! </span>
+<script src="proglangs.js"></script>
+
+</p>
+</center>
+
+<!-- Site navigation menu--> 
+</body>
+</html>
+<!-- Her har jeg implementert javascript i navigasjonsbaren til venstre. Isteden for linker har jeg valgt å lage knapper "buttons"--> 
+<ul class="navbar">
+  <li><button onclick="myFunction('er','konstruksjon')">Hjem</button>
+
+<script>
+function myFunction(name,job)
+{
+alert("Siden " + name + " under " + job);
+}
+</script>
+  <li><button onclick="myFunction('er','konstruksjon')">Kronologisk</button>
+
+<script>
+function myFunction(name,job)
+{
+alert("Siden " + name + " under " + job);
+}
+</script>
+  <li><button onclick="myFunction('er','konstruksjon')">Hierarkisk</button>
+
+<script>
+function myFunction(name,job)
+{
+alert("Siden " + name + " under " + job);
+}
+</script>
+  <li><button onclick="myFunction('er','konstruksjon')">Alfabetisk</button>
+
+<script>
+function myFunction(name,job)
+{
+alert("Siden " + name + " under " + job);
+}
+</script>
+</ul>
+
+<!-- Main content -->
+
+
+<!-- Dato, laget av osv.! -->
+<address>Laget 17 September 2013 - Kristiansand UIA<br>
+  by Andreas.</address>
+
+</body>
+</html>
